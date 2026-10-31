@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1b0b32">
+  <title>M24 | Music • Video • More</title>
+  <meta name="description" content="Discover music videos and creators on M24.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-glow glow-left"></div>
+  <div class="background-glow glow-right"></div>
+  <div class="background-glow glow-bottom"></div>
+
+  <div class="app">
+    <header class="top-header">
+      <div class="brand-line">
+        <a class="brand" href="#" aria-label="M24 home">
+          <span class="brand-symbol">▷</span>
+          <span class="brand-text"><strong>M24</strong><small>Music • Video • More</small></span>
+        </a>
+        <div class="header-actions">
+          <button class="icon-button" id="searchToggle" aria-label="Search">⌕</button>
+          <button class="icon-button notification" aria-label="Notifications">♧<i></i></button>
+          <button class="profile-button" id="profileButton" aria-label="Profile"><span>●</span></button>
+        </div>
+      </div>
+      <div class="search-panel glass hidden" id="searchPanel">
+        <span class="search-symbol">⌕</span>
+        <input id="searchInput" type="search" placeholder="Search music, videos, creators..." autocomplete="off">
+        <button id="clearSearch" aria-label="Clear search">×</button>
+      </div>
+    </header>
+
+    <nav class="category-nav glass" aria-label="Categories">
+      <button class="category active" data-filter="all"><span>⌂</span>Home</button>
+      <button class="category" data-filter="music"><span>♫</span>Music</button>
+      <button class="category" data-filter="video"><span>▷</span>Videos</button>
+      <button class="category" data-filter="trending"><span>♨</span>Trending</button>
+    </nav>
+
+    <main>
+      <section class="featured-section">
+        <div class="section-heading">
+          <div><p class="eyebrow">A WORLD OF SOUND</p><h1>Feel every <span>moment.</span></h1></div>
+          <span class="live-dot"><i></i> DISCOVER</span>
+        </div>
+
+        <article class="featured-card glass video-item" data-type="video" data-search="feel the music nova sounds music video">
+          <div class="featured-image">
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1100&q=88" alt="Artist enjoying music" fetchpriority="high">
+            <div class="image-shade"></div>
+            <span class="trending-label">♨ &nbsp;Trending</span>
+            <button class="big-play" aria-label="Play featured video">▶</button>
+            <span class="video-duration">3:45</span>
+            <div class="featured-details">
+              <h2>Feel the Music</h2>
+              <p>M24 Official <span class="verified">✓</span><span class="dot-separator">·</span>2.5M views</p>
+            </div>
+          </div>
+        </article>
+        <div class="carousel-dots" aria-label="Featured slide"><b></b><i></i><i></i><i></i></div>
+      </section>
+
+      <section class="content-section">
+        <div class="section-title">
+          <h2><span class="title-icon">✦</span> Recommended for You</h2>
+          <button class="see-all" data-filter-shortcut="all">See All <span>→</span></button>
+        </div>
+        <div class="recommendations">
+          <article class="recommend-card video-item" data-type="music" data-search="dream big music">
+            <div class="recommend-image">
+              <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=85" alt="Dream Big cover">
+              <span class="video-duration">4:20</span>
+            </div>
+            <h3>Dream Big</h3><p>M24 Music <span class="verified">✓</span><span class="dot-separator">·</span>1.8M views</p>
+          </article>
+          <article class="recommend-card video-item" data-type="music" data-search="together forever love music">
+            <div class="recommend-image">
+              <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=800&q=85" alt="Together Forever cover">
+              <span class="video-duration">5:12</span>
+            </div>
+            <h3>Together Forever</h3><p>M24 Music <span class="verified">✓</span><span class="dot-separator">·</span>3.2M views</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section trending-section">
+        <div class="section-title">
+          <h2><span class="title-icon">♨</span> Trending Now</h2>
+          <button class="see-all" data-filter-shortcut="trending">See All <span>→</span></button>
+        </div>
+        <div class="trending-list">
+          <article class="trending-row glass video-item" data-type="video" data-search="live the moment concert stage">
+            <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=500&q=85" alt="Live concert">
+            <div class="trending-copy"><h3>Live the Moment</h3><p>Live Stage <span>·</span> 920K views</p></div>
+            <span class="video-duration">6:08</span>
+          </article>
+          <article class="trending-row glass video-item" data-type="video" data-search="purple night concert">
+            <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=500&q=85" alt="Concert lights">
+            <div class="trending-copy"><h3>Purple Night</h3><p>M24 Sessions <span>·</span> 740K views</p></div>
+            <span class="video-duration">3:56</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="video-feed-section">
+        <div class="section-title"><h2><span class="title-icon">▷</span> More to Watch</h2><span class="feed-hint">SCROLL DOWN</span></div>
+        <div class="video-feed" id="videoFeed">
+          <article class="feed-card glass video-item" data-type="video" data-search="acoustic session live music guitar">
+            <div class="feed-thumb">
+              <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=1000&q=85" alt="Acoustic guitar performance" loading="lazy">
+              <button class="feed-play" aria-label="Play video">▶</button><span class="video-duration">5:18</span>
+            </div>
+            <div class="feed-info"><div class="creator-avatar">R</div><div class="feed-copy"><h3>Acoustic Session — Live Studio</h3><p>The Room Sessions <span>·</span> 86K views <span>·</span> 5 days ago</p></div><button class="more-button" aria-label="More options">⋮</button></div>
+          </article>
+          <article class="feed-card glass video-item" data-type="video" data-search="new wave official music visualizer">
+            <div class="feed-thumb">
+              <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1000&q=85" alt="Music festival lights" loading="lazy">
+              <button class="feed-play" aria-label="Play video">▶</button><span class="video-duration">3:09</span>
+            </div>
+            <div class="feed-info"><div class="creator-avatar avatar-two">A</div><div class="feed-copy"><h3>New Wave — Official Visualizer</h3><p>Aster Music <span>·</span> 54K views <span>·</span> 1 week ago</p></div><button class="more-button" aria-label="More options">⋮</button></div>
+          </article>
+          <article class="feed-card glass video-item" data-type="video" data-search="golden hour official music video">
+            <div class="feed-thumb">
+              <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1000&q=85" alt="Singer performing on stage" loading="lazy">
+              <button class="feed-play" aria-label="Play video">▶</button><span class="video-duration">4:01</span>
+            </div>
+            <div class="feed-info"><div class="creator-avatar avatar-three">M</div><div class="feed-copy"><h3>Golden Hour — Official Video</h3><p>Mira <span>·</span> 42K views <span>·</span> 1 week ago</p></div><button class="more-button" aria-label="More options">⋮</button></div>
+          </article>
+        </div>
+        <p class="end-message">YOU'RE WATCHING <strong>M24</strong></p>
+      </section>
+    </main>
+
+    <nav class="bottom-navigation glass" aria-label="Main navigation">
+      <button class="bottom-item selected" data-nav="home"><span>⌂</span><small>Home</small></button>
+      <button class="bottom-item" data-nav="explore"><span>◈</span><small>Explore</small></button>
+      <button class="create-button" id="uploadButton" aria-label="Upload">＋</button>
+      <button class="bottom-item" data-nav="library"><span>▣</span><small>Library</small></button>
+      <button class="bottom-item" data-nav="profile"><span>♙</span><small>Profile</small></button>
+    </nav>
+  </div>
+
+  <dialog class="glass modal" id="accountModal">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <div class="modal-mark">M24</div><h2>Welcome to M24</h2>
+    <p>Sign in with your Google account to upload music and videos and manage your creator profile.</p>
+    <button class="google-button" id="googleSignIn"><b>G</b> Continue with Google</button>
+    <small>You can watch and listen without signing in. Google sign-in will be connected in the backend setup.</small>
+  </dialog>
+  <dialog class="glass modal" id="uploadModal">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <div class="modal-mark">＋</div><h2>Create on M24</h2>
+    <p>To upload music or videos, sign in with your Google account.</p>
+    <button class="google-button" id="uploadSignIn">Continue with Google</button>
+    <small>This starter shows the finished interface. Secure cloud upload is a separate backend setup.</small>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
